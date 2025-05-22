@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Proyecto HTML</title>
+</head>
+<body>
+
+  <!-- 1. Título y párrafo -->
+  <h1>Hola Mundo</h1>
+  <p><em>Esta es mi primera página en HTML.</em></p>
+
+  <!-- 2. Listas -->
+  <h2>Frutas favoritas</h2>
+  <ul>
+    <li>Mango</li>
+    <li>Banano</li>
+    <li>Fresa</li>
+  </ul>
+
+  <h2>Pasos para preparar café</h2>
+  <ol>
+    <li>Hervir agua</li>
+    <li>Agregar café al filtro</li>
+    <li>Verter agua caliente</li>
+    <li>Servir, echarle azucar a su gusto</li>
+    <li>y hora de disfrutar de un buen café</li>
+  </ol>
+
+  <!-- 3. Enlaces -->
+  <h2>Enlaces</h2>
+  <a href="https://www.google.com" target="_blank">Ir a Google</a><br>
+  <a href="contacto.html">Ir a la página de contacto</a><br>
+  <a href="https://github.com" target="_blank">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="30">
+  </a>
+
+  <!-- 4. Imagen -->
+  <h2>Imagen desde Internet</h2>
+  <img src="https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2025/04/19151151/Verstappen-Red-Bull-F1-1.jpg" alt="Imagen de ejemplo" width="400" height="auto">
+
+  <!-- 5. Videos -->
+  <h2>Video local</h2>
+  <video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+
+  <h2>Video de YouTube</h2>
+  <iframe width="560" height="315" src="https://youtu.be/PtBHnMMRI0E" 
+    title="YouTube video" frameborder="0" allowfullscreen></iframe>
+
+  <!-- 6. Tabla -->
+  <h2>Tabla de información</h2>
+  <table border="1">
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Ciudad</th>
+    </tr>
+    <tr>
+      <td>Luis</td>
+      <td>28</td>
+      <td>Madrid</td>
+    </tr>
+    <tr>
+      <td>Juan</td>
+      <td>35</td>
+      <td>Oslo</td>
+    </tr>
+    <tr>
+      <td>Pablo</td>
+      <td>22</td>
+      <td>Madrid</td>
+    </tr>
+  </table>
+
+  <!-- 7. Navegación -->
+  <nav>
+    <h2>Menú de navegación</h2>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- 8. Formulario de Contacto -->
+  <h2>Formulario de Contacto</h2>
+  <form>
+    Nombre: <input type="text" name="nombre"><br>
+    Correo: <input type="email" name="correo"><br>
+    Mensaje: <br>
+    <textarea name="mensaje" rows="4" cols="40"></textarea><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- 9. Formulario con varios campos -->
+  <h2>Formulario Completo</h2>
+  <form>
+    Nombre: <input type="text" name="nombre"><br>
+    Correo: <input type="email" name="correo"><br>
+    Contraseña: <input type="password" name="password"><br>
+    Edad: <input type="number" name="edad"><br>
+    Fecha de nacimiento: <input type="date" name="fecha_nacimiento"><br>
+    
+    Sexo:
+    <input type="radio" name="sexo" value="masculino"> Masculino
+    <input type="radio" name="sexo" value="femenino"> Femenino
+    <input type="radio" name="sexo" value="otro"> Otro<br>
+
+    Ciudad:
+    <select name="ciudad">
+      <option>Madrid</option>
+      <option>Buenos Aires</option>
+      <option>Ciudad de México</option>
+    </select><br>
+
+    <input type="checkbox" name="terminos"> Acepto los términos<br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- 10. Página de perfil personal -->
+  <h2>Mi perfil</h2>
+  <img src="https://design-assets.adobeprojectm.com/content/download/express/public/urn:aaid:sc:VA6C2:1fb0f846-a882-4041-871c-7613166d067f/component?assetType=TEMPLATE&etag=ac65f0a75e07a792bbc3a624eef38487&revision=0&component_id=691ea5b1-d6df-431b-9f7e-2a0b0fc94301" alt="Foto de perfil" width="300" height="auto"><br>
+  <p>Soy estudiante de desarrollo web con pasión por aprender y crear proyectos.</p>
+  <h3>Mis hobbies</h3>
+  <ul>
+    <li>Leer</li>
+    <li>Programar</li>
+    <li>Jugar videojuegos</li>
+  </ul>
+
+  <h3>Video favorito</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=MTe12fH2xtQ" 
+    title="YouTube video" frameborder="0" allowfullscreen></iframe>
+
+  <h3>Redes sociales</h3>
+  <table border="1">
+    <tr>
+      <th>Red</th>
+      <th>Enlace</th>
+    </tr>
+    <tr>
+      <td>GitHub</td>
+      <td><a href="https://github.com/JuanPablo616">github.com</a></td>
+    </tr>
+    <tr>
+      <td>Twitter</td>
+      <td><a href="https://twitter.com">twitter.com</a></td>
+    </tr>
+  </table>
+
+  <!-- 11. Formulario con validación básica -->
+  <h2>Login</h2>
+  <form>
+    Usuario: <input type="text" name="usuario" pattern="[A-Za-z0-9]{1,12}" required><br>
+    Contraseña: <input type="password" name="password" required><br>
+    <button type="submit">Entrar</button>
+  </form>
+
+  <!-- 12. Página de productos -->
+  <h2>Productos</h2>
+  <table border="1">
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Imagen</th>
+      <th>Acción</th>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>$15</td>
+      <td><img src="https://m.media-amazon.com/images/I/61lCLrCtuhL.jpg" margin="auto";  width="100" height="auto"></td>
+      <td><button>Comprar</button></td>
+    </tr>
+    <tr>
+      <td>Teclado</td>
+      <td>$25</td>
+      <td><img src="https://www.kalley.com.co/medias/7705946478533-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMjcwOHxpbWFnZS93ZWJwfGFEQmlMMmd4TVM4eE5ETTJOakV5T1RZeE9EazNOQzgzTnpBMU9UUTJORGM0TlRNelh6QXdNVjgzTlRCWGVEYzFNRWd8ZjkwOWI3NTkwZjYwMTdhMjFjMjA3ZWQ4MjY4MzdhNzM3MGI2ZGVhYjRmNjcwYWRmNWM4MGMxZmRkMWNkZmI4MA" alt="Teclado" width="100" height="auto"></td>
+      <td><button>Comprar</button></td>
+    </tr>
+    <tr>
+      <td>Pantalla</td>
+      <td>$120</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDP4QY-CtLPN9_6vLcrtY44PLBelUov85Exw&s" alt="Pantalla" width="100" height="auto"></td>
+      <td><button>Comprar</button></td>
+    </tr>
+  </table>
+
+</body>
+</html>
