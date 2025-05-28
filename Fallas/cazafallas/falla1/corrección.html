@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--Atributo mal escrito-->
+    <title>PrÃ¡ctica Modelo de Caja</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .box {
+            background-color: #f0f0f0;
+            padding: 20px; 
+            border: 2px solid #333;
+            margin: 10px;
+            display: inline;
+        }
+        
+        #special-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: yellow;
+        }
+        
+        .fixed-box {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px; 
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Caja 1</div>
+        <div class="box" id="special-box">Caja Especial</div>
+        <div class="box">Caja 3</div>
+    </div>
+    <div class="fixed-box">Fija</div>
+</body>
+</html>
