@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores CSS</title>
+    <style>
+        p {
+            color: blue;
+        }
+        
+        .text {
+            color: green;
+        }
+        
+        #unique {
+            color: red !important;
+        }
+        
+        div p .text { /* esta regla no aplica a nada en este documento. se debe cambiar por dev p.text{} si así deseas realizar los cambios a los <p class ="text"*/
+            color: purple;
+        }
+        
+        div > p {
+            font-weight: bold;
+        }
+        
+        p:first-child {
+            text-decoration: underline;
+        }
+        
+        p::first-letter {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="text" id="unique">Este es un párrafo único</p>
+        <p>Este es otro párrafo</p>
+        <span><p>Párrafo dentro de span</p></span>
+    </div>
+    <p class="text">Párrafo fuera del div</p>
+</body>
+</html>

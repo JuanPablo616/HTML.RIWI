@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformaciones CSS</title>
+    <style>
+        .rotate-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transform: rotate(45deg);
+            transition: transform 2s;
+        }
+        
+        .rotate-box:hover {
+            transform: rotate(90deg);
+            background-color: green;
+            transition: background-color 0.5s; /*La transición para el transform y blackground-color debe de ir en el estado normal no en el :hover*/
+        }
+        
+        .scale-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: scale(1.5);
+            margin: 50px;
+        }
+        
+        .translate-box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transform: translateX(50px, 20px); /*la función translateX solo acepta un valor para el movimiento en el eje X, si se desea mover un elemento en el eje X y en el eje Y, se usa la función translate(X e Y) o realizarlo de manera separada translate(X) y translate(Y)*/
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate-box"></div>
+    <div class="scale-box"></div>
+    <div class="translate-box"></div>
+</body>
+</html>
