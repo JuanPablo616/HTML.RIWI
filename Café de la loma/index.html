@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café de la Loma</title>
+  <link rel="stylesheet" href="/style/style.css ">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="loader"><div class="spinner"></div></div>
+  <button id="modo-toggle">Modo Oscuro</button>
+  <header>
+    <div class="menu-navegacion">
+      <img src="/img/logo.png" alt="Logo" class="logo">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="contenido-hero">
+      <h1>Bienvenido a Café de la Loma</h1>
+      <p>Café artesanal con sabor a Colombia</p>
+      <a href="#menu" class="boton">Ver Menú</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Menú</h2>
+    <h3>Cafés</h3>
+    <div class="productos">
+      <div class="producto"><img src="/img/expresso.jpg"><h4>Expresso</h4><p>$25</p></div>
+      <div class="producto"><img src="/img/capuccino.jpg"><h4>Capuccino</h4><p>$35</p></div>
+    </div>
+    <h3>Pasteles</h3>
+    <div class="productos">
+      <div class="producto"><img src="/img/cheesecake.jpg"><h4>Cheesecake</h4><p>$45</p></div>
+      <div class="producto"><img src="/img/brownie.jpg"><h4>Brownie</h4><p>$30</p></div>
+    </div>
+    <h3>Postres</h3>
+    <div class="productos">
+      <div class="producto"><img src="/img/pannaccota.jpg"><h4>Panna ccota</h4><p>$40</p></div>
+      <div class="producto"><img src="/img/tiramisu.jpg"><h4>Tiramisú</h4><p>$42</p></div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>Café de la Loma</strong> creemos en el poder de una taza de café bien hecha. Nacimos en lo alto de las montañas Colombianas con la idea de ofrecer un espacio cálido, auténtico y lleno de sabor.</p>
+    <p>Seleccionamos granos orgánicos, cultivados por caficultores locales comprometidos con la tierra, y los transformamos en experiencias memorables para nuestros visitantes. Aquí, cada sorbo cuenta una historia.</p>
+    <p>Además del café, ofrecemos pasteles artesanales y postres tradicionales, preparados cada día con ingredientes frescos y amor por lo que hacemos.</p>
+  </section>
+
+  <section id="ubicacion">
+    <h2>Ubicación y Horarios</h2>
+    <p>carrera 94a # 48a 44. Lunes a Domingo 8:00 AM - 8:00 PM</p>
+  </section>
+
+  <section id="reservas">
+    <h2>Reservas</h2>
+    <form id="formulario">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <input type="date" name="fecha" required>
+      <input type="time" name="hora" required>
+      <button type="submit">Reservar</button>
+    </form>
+    <p id="mensaje"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café de la Loma</p>
+  </footer>
+</body>
+</html>
