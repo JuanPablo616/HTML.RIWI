@@ -52,7 +52,26 @@
             <span>Mes</span>
             <input type="month" id="mes" name="mes ">
         </label>
-        <input type="submit">
+        <input type="submit"/>
+    </form>
+</body>
+</html>
+
+<!-- Otro tipo de formulario -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+    <form action="">
+        <label for="calendario">
+            <span>Calendario</span>
+            <input type="datetime-local" id="calendario" name="calendario">
+        </label>
+        <input type="submit"/>
     </form>
 </body>
 </html>
