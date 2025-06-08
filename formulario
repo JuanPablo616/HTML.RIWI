@@ -75,3 +75,61 @@
     </form>
 </body>
 </html>
+
+<!-- FORMULARIO CON AUTOCOMPLETADO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="nombre">
+                <span>Nombre:</span>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required/>
+            </label>
+
+             <label for="correo">
+                <span>Correo:</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" required/>
+            </label>
+
+             <label for="pais">
+                <span>Pais:</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" required/>
+            </label>
+
+             <label for="codigo_postal">
+                <span>Codigo postal:</span>
+                <input type="number" name="codigo_postal" id="codigo_postal" autocomplete="postal-code" required/>
+            </label>
+            <input type="submit"/>
+        </form>
+    </main>
+</body>
+</html>
+
+<!-- Menú desplegable -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+  <main>
+    <input list="cursos"/>
+    <datalist id="cursos">
+        <option value="Javascript">Javascript</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Web Standards">Web Standards</option>
+    </datalist>
+  </main>
+</body>
+</html>
